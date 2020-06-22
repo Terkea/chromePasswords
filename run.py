@@ -61,7 +61,6 @@ if __name__ == '__main__':
                 "username": username,
                 "password": decrypted_password
             })
-            # print("URL: " + url + "\nUser Name: " + username + "\nPassword: " + decrypted_password + "\n" + "*" * 50 + "\n")
     except Exception as e:
         pass
 
