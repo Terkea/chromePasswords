@@ -67,9 +67,11 @@ if __name__ == '__main__':
     cursor.close()
     conn.close()
 
-    f = open("passwords.json", "w")
+    f = open("passwords.txt", "w")
     f.write(json.dumps(accounts,indent=4, sort_keys=True))
     f.close()
+    
+    print('VOILA')
     try:
         os.remove("Loginvault.db")
     except Exception as e:
